@@ -65,13 +65,6 @@ public class City {
                 }
             }
         }
-        // Проверка расширения матрицы смежности
-//        for (int i = 0; i < size; i++) {
-//            for (int j = 0; j < size; j++) {
-//                System.out.print(connectionMatrix[i][j] + "\t");
-//            }
-//            System.out.println();
-//        }
     }
 
     public void makeRoad(int dest) {
@@ -144,7 +137,7 @@ public class City {
         for (int i = k - 2; i >= 0; --i) {
             result.append(" -> ").append(nameDistricts.get(vertexIsVisited[i]));
         }
-        System.out.println(result.toString());
+        System.out.println(result);
         courierDistrict = dest;
     }
 }
